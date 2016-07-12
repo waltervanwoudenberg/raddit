@@ -10,6 +10,11 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
   </head>
   <body>
+
+    <% flash.each do |name, msg| %>
+      <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+    <% end %>
+
     <%= yield %>
     <%= javascript_include_tag 'application' %>
   </body>
