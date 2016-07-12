@@ -8,6 +8,7 @@ gem 'figaro'
 gem 'jbuilder', '~> 2.0'
 gem 'redis'
 gem 'devise'
+gem 'acts_as_votable'
 
 gem 'sass-rails'
 gem 'jquery-rails'
